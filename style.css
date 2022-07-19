@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500&display=swap');
+*
+/*------Header----------*/
+
+{
+    margin:0;
+    padding:0;
+    font-family: 'Monospace', cursive;
+    box-sizing:border-box;
+    text-transform: capitalize;
+}
+.title
+{
+    text-align:center;
+    font-size:rem;
+    padding:0.5rem;
+    color: chocolate;
+
+}
+.title span
+{
+    color:rgb(8, 8, 4);
+
+}
+@media(max-width:768px)
+{
+    .title
+    {
+        text-align:center;
+        font-size:2rem;
+    }
+}
+html
+{
+    font-size:15px;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar
+{
+    width:.8rem;
+}
+html::-webkit-scrollbar-thumb
+{
+    background: rgb(5, 5, 5);
+}
+section
+{
+    min-height: 100vh;
+    padding:1rem 5%;
+    padding-top:8rem;
+}
+header 
+{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:whitesmoke;
+    padding:1rem;
+    box-shadow:0 .2rem .3rem lightgray;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+header .logo img 
+{
+    height:8rem;
+}
+header .navigate ul 
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    list-style: none;
+}
+header .navigate ul li 
+{
+    margin-left:3rem;
+}
+header .navigate ul li a 
+{
+    font-size: 1.2rem;
+    color:rgb(201, 191, 166);
+    text-decoration:none;
+    font-weight: 500;
+}
+header #menu 
+{
+    font-size: 2rem;
+    color:chocolate;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:768px)
+{
+    header #menu 
+    {
+    display:block;
+    }
+    header .navigate 
+    {
+        position:fixed;
+        top:8rem;
+        left: 0;
+        width: 100%;
+        background:aliceblue;
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+    }
+    header .navigate ul 
+    {
+        flex-flow: column;
+        padding: 1rem;
+    }
+    header .navigate ul li 
+    {
+        margin:1rem;
+        width: 100%;
+    }
+    header .navigate ul li a 
+    {
+        display: block;
+        color: #000;
+        padding-left: 2rem;
+        border-right: .1rem solid #000;
+        font-size: 1rem;
+    }
+    header .navigate ul li a:hover,
+    header .navigate ul li a.active 
+    {
+        color:chocolate;
+        border-color:chocolate;
+    }
+    header .navigate.nav-toggle
+    {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .fa-times
+    {
+        transition:.5s ease;
+        transform:rotate(180deg);
+    }
+}
+header .navigate li 
+{
+    background: white;
+    border-radius: 50px;
+    padding: 20px;
+}
+header .navigate ul li a:hover,
+header .navigate ul li a.active
+{
+    font-size: 25px;
+    transition: 0.6;
+    color: chocolate;
+}
+
+/*----Home----*/
+/*----Home----*/
+/*----Home----*/
+/*----Home----*/
+.class
+{
+    text-align:center;
+    color: rgb(238, 117, 30);
+    text-shadow: .4rem .4rem #ece4e6;
+    font-size:7rem;
+
+}
+.class span
+{
+    color:white;
+    text-shadow: .5rem .5rem #080304;
+    padding:.5rem 0;
+    
+}
+.home h2
+{
+    font-size:2rem;
+}
+.home 
+{
+    background:linear-gradient(rgba(187, 170, 170, 0.5),rgba(0, 0, 0, 0.5)),url("back1.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.home h1 
+{
+    padding-top:20%;
+    font-size:4rem;
+    letter-spacing: 1px;
+}
+.home p 
+{
+    font-size:1.5rem;
+    line-height:2rem;
+}
+.home-btn
+{
+    padding:20px 0;
+}
+button i 
+{
+    margin-left: .5rem;
+   font-size:1rem;
+   text-align: center;
+   transition: 2s ease;
+   animation: animate .5s ease infinite;
+}
+button:hover 
+{
+    background:chocolate;
+    
+}
+@keyframes animate 
+{
+    0%
+    {
+        transform:translateX(-5px);
+    }
+    100% 
+    {
+        transform: translateX(5px);
+    }
+}
+@media(max-width:768px)
+{
+    .home h1 
+    {
+        font-size: 3rem;
+        padding-top: 50%;
+    }
+    .home p 
+    {
+        font-size:1.2rem;
+    }   
+}
+
+
+/*----Our Cakes------*/
+/*----Our Cakes------*/
+/*----Our Cakes------*/
+/*----Our Cakes------*/
+.goods
+{
+    background:linear-gradient(rgba(240, 225, 225, 0.5),rgba(141, 135, 135, 0.5)),url("back4.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.title
+{
+    text-align:center;
+    font-size:3rem;
+    padding:0.5rem;
+    color: chocolate;
+    
+
+}
+.title span
+{
+    color:rgb(8, 8, 4);
+
+}
+@media(max-width:768px)
+{
+    .title
+    {
+        text-align:center;
+        font-size:2rem;
+    }
+}
+
+.about
+{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background:linear-gradient(rgba(240, 225, 225, 0.5),rgba(141, 135, 135, 0.5)),url("back4.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.about .about-content
+{
+    width:100%;
+    height: auto;
+    padding:4rem 2rem;
+    text-align: center;
+    background:chocolate;
+    border-radius: 5px;
+}
+.about-content h2 
+{
+    font-size:2.5rem;
+    color:rgb(41, 39, 39);
+    padding:.5rem 0;
+    letter-spacing:.2rem;
+    text-shadow: .2rem .2rem #ece4e6;
+}
+.about-content p 
+{
+    font-size:1rem;
+    font-weight:500;
+    line-height: 1.5rem;
+    color:#fff;
+}
+.about .image img 
+{
+    width:100%;
+    height: auto;
+    
+}
+.about .image img:hover 
+{
+    animation:animate-img 5s ease infinite;
+}
+@keyframes animate-img
+{
+    0%,100%
+    {
+        transform: translateX(-3rem);
+    }
+    25%
+    {
+        transform: translateY(5rem);
+    }
+    50%
+    {
+        transform: translateX(3rem);
+    }
+    75%
+    {
+        transform: translateY(-5rem);
+    }
+}
+@media(max-width:768px)
+{
+    .about
+    {
+    display: block;
+    justify-content: space-between;
+    align-items:center;
+    }
+}
+
+/*------Menu-----*/
+/*------Menu-----*/
+/*------Menu-----*/
+/*------Menu-----*/
+.product
+{
+    background:linear-gradient(rgba(240, 225, 225, 0.5),rgba(141, 135, 135, 0.5)),url("back4.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.title
+{
+    text-align:center;
+    font-size:3rem;
+    padding:0.5rem;
+    color: chocolate;
+    
+
+}
+.title span
+{
+    color:rgb(8, 8, 4);
+
+}
+@media(max-width:768px)
+{
+    .title
+    {
+        text-align:center;
+        font-size:2rem;
+    }
+}
+
+.cake-product .inner-cake-row
+{
+   display: flex;
+   align-items: center;
+   justify-content:center;
+   flex-wrap: wrap; 
+}
+.cake-product .inner-cake-col
+{
+    max-width: 1300px;
+    background:#fff;
+    height: 27rem;
+    flex:1 1 20rem;
+    padding:1.2rem;
+    margin:1.5rem;
+    border-radius:1rem;
+    box-shadow:0 .3rem .6rem chocolate;
+    text-align: center;
+}
+.cake-product .inner-cake-col:hover 
+{
+    transition:.5s ease;
+    transform:translateY(-.5rem);
+}
+.cake-product .inner-cake-col img 
+{
+    height: 15rem;
+    width:100%;
+    object-fit: cover;
+}
+.cake-product .inner-cake-col .cake-price p
+{
+  position:absolute;     
+  width: 4.7rem;
+  height: auto;
+  margin-top:-1.2rem;
+  margin-left: 8rem;
+  padding:.8rem .1rem;
+  text-align: center;
+  font-size: 2rem;
+  border:none;
+  border-radius:10rem;
+  background:rgb(231, 219, 219);
+  color:rgb(248, 94, 4);
+}
+.cake-star
+{
+    color: #FFDF00;
+    position:relative;
+    margin-top: 3.5rem;
+}
+.cake-product .inner-cake-col h2
+{
+    padding: .5rem 0;
+    color:chocolate;
+    font-size:1.6rem;
+    letter-spacing:.1rem;
+}
+.cake-product .inner-cake-col h3 
+{
+    color:gray;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.cake-product .inner-cake-col p 
+{
+    color:rgb(17, 15, 15);
+    font-size: 1rem;
+    font-weight: 500;
+    padding:.5rem 0;
+}
+
+
+/*-----contact-----*/
+/*-----contact-----*/
+/*-----contact-----*/
+/*-----contact-----*/
+
+.contact
+{
+    padding-top:8.5rem;
+}
+.cake-contact
+{
+    width:100%;
+    background:linear-gradient(rgba(240, 225, 225, 0.5),rgba(141, 135, 135, 0.5)),url("back4.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.cake-contact-row
+{   
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+}
+.cake-contact-col 
+{
+    margin:2rem;
+    flex: 1 1 20rem;
+    text-align:center;
+}
+.cake-contact-col .images 
+{
+    border:1px solid #fff;
+}
+.cake-contact-col img
+{
+    width:90%;
+    height:auto;
+    margin:1.5rem;
+    padding:1rem;
+    flex:1 1 21rem;
+    border:1px solid transparent;
+    border-radius: 1rem;   
+}
+.cake-contact-col h1 
+{
+    padding:1rem 0;
+    color:chocolate;
+    letter-spacing: .1rem;
+}
+.cake-contact-col .social i
+{
+    padding:.8rem;
+    border: none;
+    border-radius: 1rem;
+    background:chocolate;
+    color:#fff;
+    font-size: 1.5rem;
+}
+.cake-contact-col .social i:hover 
+{
+    transition: 0.5s ease;
+    background: rgb(233, 97, 63);
+    color:#fff;
+    cursor: pointer;
+}
+.cake-contact-col p 
+{
+    padding:.5rem 0;
+    line-height:1.5rem;
+    color:rgb(78, 77, 77);
+}
+.cake-contact-col input, .cake-contact-col textarea 
+{
+    width:80%;
+    padding:1rem;
+    margin-bottom:1.2rem;
+    border:none;
+    border-bottom:.1rem dotted chocolate;  
+}
+.cake-contact-col textarea
+{
+    resize: none;
+}
+.copyright
+{
+    background:linear-gradient(rgba(240, 225, 225, 0.5),rgba(141, 135, 135, 0.5)),url("back4.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.copyright i 
+{
+    font-size:2rem;
+    color:#fff;
+}
+.copyright p 
+{
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    color:#fff;
+}   
